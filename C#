@@ -1,0 +1,11 @@
+To import static type for each of the code files in a project:
+
+Edit [ProjectName].csproj file and import following code.
+
+For e.g. 
+To import System.Console to all of the files so that can invoke Console.WriteLine() with just WriteLine(). 
+
+<ItemGroup>
+		<Using Include="System.Console" Static="true"/>
+</ItemGroup>
+
