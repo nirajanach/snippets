@@ -9,3 +9,14 @@ To import System.Console to all of the files so that can invoke Console.WriteLin
 		<Using Include="System.Console" Static="true"/>
 </ItemGroup>
 
+To Scaffold the SQLserver:
+For example, If you wish to design entity models as per the existing database then use the following command on terminal:
+
+dotnet ef dbcontext scaffold "Data Source=JARVIS\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=true;TrustServerCertificate=true;MultipleActiveResultSets=true;"
+Microsoft.EntityFrameworkCore.SqlServer 
+--namespace Packt.Shared 
+--data-annotations 
+--context Northwind 
+--project Northwind.Common.EntityModels.Sqlserver
+
+
